@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:baselineAligned="false"
+    android:layoutDirection="rtl"
+    tools:context=".Preferences">
+
+
+    <ListView
+        android:id="@+id/allergies_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_weight="1">
+    </ListView>
+
+    <TextView
+        android:id="@+id/addAllergy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Can't find your allergy? Click to add"/>
+
+    <Button
+        android:id="@+id/listbtn"
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_button"
+        android:onClick="save_list"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Save"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

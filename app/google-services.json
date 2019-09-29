@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "760990667726",
+    "firebase_url": "https://allergyalert-708f4.firebaseio.com",
+    "project_id": "allergyalert-708f4",
+    "storage_bucket": "allergyalert-708f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760990667726:android:5a153c4225b6e4c5",
+        "android_client_info": {
+          "package_name": "com.example.allergyalert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760990667726-bstvo2ph2b8h6s4eisq2v505u8g2cg0p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.allergyalert",
+            "certificate_hash": "13fe20db19d1555f438448bd68c9e1d57f6b5592"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFWY0awiDaOwaOs-yQgAtz6_2l0fkVN64"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

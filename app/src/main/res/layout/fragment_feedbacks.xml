@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeedbacksFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/average_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="8dp"
+                android:text="Average Star Rating"/>
+
+            <RatingBar
+                android:id="@+id/feedbacksRateBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/average_tv"
+                android:layout_centerHorizontal="true"
+                android:isIndicator="true"
+                android:layout_marginTop="16dp" />
+
+            <Spinner
+                android:id="@+id/sort_spinner"
+                android:layout_width="192dp"
+                android:layout_height="43dp"
+                android:layout_below="@id/feedbacksRateBar"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp" />
+
+            <Spinner
+                android:id="@+id/stars_spinner"
+                android:layout_width="192dp"
+                android:layout_height="38dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/sort_spinner" />
+
+            <View
+                android:id="@+id/feedbacks_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/stars_spinner"
+                android:layout_marginTop="10dp"
+                android:background="#808080" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/feedbacks_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/feedbacks_divider"
+                android:layout_marginTop="10dp"
+                android:scrollbars="vertical"/>
+
+        </RelativeLayout>
+
+</ScrollView>

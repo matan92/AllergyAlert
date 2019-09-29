@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <color name="colorPrimary">@android:color/transparent</color>
+    <color name="colorPrimaryDark">#0000FF</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="blue">#0000FF</color>
+    <color name="CornflowerBlue">#6495ED</color>
+    <color name="SteelBlue">#4682B4</color>
+    <color name="DodgerBlue">#1E90FF</color>
+    <color name="DeepSkyBlue">#00BFFF</color>
+    <color name="profileBackgroundColor">#03A9F4</color>
+    <color name="color_preloader_start">#000000</color>
+    <color name="color_preloader_center">#000000</color>
+    <color name="color_preloader_end">#ff56a9c7</color>
+
+
+
+</resources>

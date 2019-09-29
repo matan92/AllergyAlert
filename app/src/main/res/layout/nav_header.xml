@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/header_layout"
+    android:background="@color/fui_bgTwitter"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/nav_img"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:src="@drawable/ic_account_circle_black_24dp"
+        app:civ_border_color="#00000000"
+        app:civ_border_width="5dp"
+        android:onClick="myProfile"/>
+
+    <TextView
+        android:id="@+id/signRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:layout_marginStart="10dp"
+        android:text="Sign in or register to use all features"
+        android:textColor="@android:color/white"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+
+</LinearLayout>

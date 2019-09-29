@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    tools:context=".ProductDetails">
+
+
+    <LinearLayout
+        android:id="@+id/recommendation_template"
+        android:layout_width="match_parent"
+        android:layout_height="142dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp">
+
+                <ImageView
+                    android:id="@+id/vi_image"
+                    android:layout_width="28dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="120dp"
+                    android:src="@drawable/ic_check"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/vi_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="150dp"
+                    android:text="This is for you"
+                    android:textStyle="bold"
+                    android:textColor="#008000"
+                    android:textSize="20sp"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/not_image"
+                    android:layout_width="28dp"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="120dp"
+                    android:src="@drawable/ic_do_not"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/not_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="150dp"
+                    android:text="Not for you"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recommendation_template"
+            app:tabMode="scrollable"
+            app:tabTextAppearance="@style/MyCustomTextAppearance"
+            app:tabSelectedTextColor="@android:color/holo_red_dark"
+            app:tabTextColor="@android:color/black">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabIngredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ingredients"
+                android:text="Ingredients"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabFeedbacks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/customer_review"
+                android:text="Feedbacks"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabWrite_Feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/write_feedback"
+                android:text="Write Feedback"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabAlternatives"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_alternatives"
+                android:text="Alternatives"/>
+
+        </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabs"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

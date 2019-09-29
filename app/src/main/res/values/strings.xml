@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Allergy Alert</string>
+    <string name="Welcome">Welcome to Allergy Alert</string>
+    <string name="scan">Start Scan</string>
+    <string name="notifications">Notifications</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="facebook_application_id" translatable="false">394460484512968</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb394460484512968</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_web_client_id" translatable="false">760990667726-bstvo2ph2b8h6s4eisq2v505u8g2cg0p.apps.googleusercontent.com</string>
+    <string name="reset">Reset</string>
+    <string name="password_reset">Password Reset</string>
+
+</resources>

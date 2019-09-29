@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+            <Switch
+                android:id="@+id/push_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/push_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/push_switch"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="-25dp"
+                android:layout_toEndOf="@id/push_switch"
+                android:text="Push Notifications"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+
+            <ListView
+                android:id="@+id/list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/push_switch"
+                android:dividerHeight="0.5dp">
+
+            </ListView>
+
+
+</RelativeLayout>

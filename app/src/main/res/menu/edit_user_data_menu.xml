@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/edit_username"
+        android:title="Change your username"/>
+
+    <item
+        android:id="@+id/edit_email"
+        android:title="Change your email"/>
+
+    <item
+        android:id="@+id/edit_password"
+        android:title="Change your password"/>
+
+</menu>
